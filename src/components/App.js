@@ -19,6 +19,7 @@ const App = () => {
   const handleKeyDown = (event) => {
     if (event.key === 'Enter') {
       if (isNaN(event.target.value)) {
+        setCountdown(0);
         event.target.value = '';
         return;
       }
